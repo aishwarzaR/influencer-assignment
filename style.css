@@ -131,7 +131,60 @@ margin-bottom: 50px;
     
     
 }
+/* for mobile device */
 @media screen and (max-width: 688px) {
+    .top{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top h2{
+        text-align: center;
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    .influence-container,.job {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+     
+}
+    .influence-container img {
+      width: 50%;
+      height: 50%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .influencer-info{
+        margin-left: 0px;
+      margin-right: 0px;
+}
+
+.collection-container{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+    .collections{
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .job-info{
+        font-size: 1.5em;
+        align-items: justify;
+        
+    }
+    .button{
+        margin-top: 15px;
+    }
+    
+    
+}
+/* for ipad */
+@media screen and (min-width: 689px) and (max-width:992px) {
+    body{
+        margin-left: 55px;
+    }
     .top{
         margin-left: auto;
         margin-right: auto;
@@ -166,10 +219,16 @@ margin-bottom: 50px;
     .collections{
         margin-left: 0px;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .button{
         margin-top: 15px;
+    }
+    .job-info p, .fa-star{
+        font-size: 1.5em;
+    }
+    .see a,h2{
+        font-size: 2.5em;
     }
     
     
