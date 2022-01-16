@@ -35,25 +35,6 @@ font-family: 'Poppins', sans-serif;
    
 
 }
-@media only screen and (max-width: 688px) {
-
-    .influence-container{
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          background-color: turquoise;
-      }
-      .collection-container .collections{
-          grid-template-columns: repeat(1,1fr);
-      }
-      .job{
-          display: grid;
-        grid-template-columns: repeat(1,1fr);
-
-      }
-     
-  }
-
 .button{
     background-color: #E02C6D;
     color: white;
@@ -102,6 +83,7 @@ margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 15px;
 }
 .fa-star{
     
@@ -146,6 +128,49 @@ margin-bottom: 50px;
     color: white;
     justify-content: center;
    
+    
+    
+}
+@media screen and (max-width: 688px) {
+    .top{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top h2{
+        text-align: center;
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    .influence-container,.job {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+     
+}
+    .influence-container img {
+      width: 50%;
+      height: 50%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .influencer-info{
+        margin-left: 0px;
+      margin-right: 0px;
+}
+
+.collection-container{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+    .collections{
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button{
+        margin-top: 15px;
+    }
     
     
 }
